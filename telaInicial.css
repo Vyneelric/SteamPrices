@@ -3,3 +3,91 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #1F232E;
+}
+
+header p{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: #DDDDDD;
+    padding-left: 6vh;
+}
+body{
+    height: 100vh;
+}
+main{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: #161920;
+    flex-direction: column;
+    text-align: center;
+}
+
+main h1{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+main h2{
+    font-family: "Work Sans";
+    font-weight: 300;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+main span{
+    font-family: "Work Sans";
+    font-weight: 600;
+}
+
+.Lojas {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.steam{
+    width: 594px;
+    height: 656px;
+}
+
+.epic{
+    width: 594px;
+    height: 656px;
+}
+
+.logoSteam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 594px;
+    height: 107px;
+    background-color: #BDBDBD;
+    border-radius: 10px 10px 0 0;
+}
+.logoEpic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 594px;
+    height: 107px;
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+}
+
+hr{
+    width: 504.5px;
+    border: 2px solid;
+    border-color: #666666;
+}

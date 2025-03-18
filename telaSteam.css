@@ -3,3 +3,113 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #1F232E;
+    justify-content: space-between;
+}
+
+.contentHeader{
+    display: flex;
+    align-items: center;
+}
+
+.contentHeader p{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: #DDDDDD;
+    padding-left: 6vh;
+}
+
+header h1{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.steamWelcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.boxSteam{
+    display: flex;
+    height: 60px;
+    width: 190px;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 4px;
+}
+
+
+.pesquisa{
+    display: flex;
+    height: 182px;
+    background-color: #292E3C;
+    border: #565656 1px solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentSteam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.contentSteam input{
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    background-color: #394053;
+    border: 1px solid;
+    border-color: #ABABAB;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 33px;
+    width: 448px;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.contentSteam input::placeholder{
+    color: #FFFFFF;
+}
+
+hr{
+    width: 480px;
+    border-color: #ABABAB;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+button{
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    background-color: #394053;
+    color: #FFFFFF;
+    border: 1px solid;
+    border-color: #ABABAB;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 33px;
+    width: 133px;
+}
+

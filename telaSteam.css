@@ -11,6 +11,9 @@ header{
     background-color: #1F232E;
     justify-content: space-between;
 }
+main{
+    height: 100vh;
+}
 
 .contentHeader{
     display: flex;
@@ -113,3 +116,66 @@ button{
     width: 133px;
 }
 
+
+.table{
+    width: 100%;
+    font-family: "Roboto";
+    background-color: #1F232E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1F232E;
+    color: white;
+}
+td{
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.jogo{
+    display: flex;
+    align-items: center;
+}
+
+.jogo img{
+    padding-right: 10px;
+}
+
+th{
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 200;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #575757;
+    border-right: 1px solid #575757;
+}
+
+
+.title{
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+
+
+.price-old {
+    text-decoration: line-through;
+    color: #888;
+}

@@ -4,6 +4,179 @@
     box-sizing: border-box;
 }
 
-main{
+header{
+    display: flex;
     width: 100%;
+    align-items: center;
+    background-color: #161616;
+    justify-content: space-between;
+}
+main{
+    height: 100vh;
+}
+
+.contentHeader{
+    display: flex;
+    align-items: center;
+}
+
+.contentHeader p{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: #DDDDDD;
+    padding-left: 6vh;
+}
+
+header h1{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.epicWelcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.boxEpic{
+    display: flex;
+    height: 60px;
+    width: 190px;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 4px;
+}
+
+
+.pesquisa{
+    display: flex;
+    height: 182px;
+    background-color: #2C2C2C;
+    border: #565656 1px solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentEpic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.contentEpic input{
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    background-color: #202020;
+    border: 1px solid;
+    border-color: #ABABAB;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 33px;
+    width: 448px;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.contentEpic input::placeholder{
+    color: #FFFFFF;
+}
+
+hr{
+    width: 480px;
+    border-color: #ABABAB;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+button{
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    background-color: #202020;
+    color: #FFFFFF;
+    border: 1px solid;
+    border-color: #ABABAB;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 33px;
+    width: 133px;
+}
+
+
+.table{
+    width: 100%;
+    font-family: "Roboto";
+    background-color: #1F232E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111111;
+    color: white;
+}
+td{
+    background-color: #161616;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.jogo{
+    display: flex;
+    align-items: center;
+}
+
+.jogo img{
+    padding-right: 10px;
+}
+
+th{
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 200;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #575757;
+    border-right: 1px solid #575757;
+}
+
+
+.title{
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+
+
+.price-old {
+    text-decoration: line-through;
+    color: #888;
 }

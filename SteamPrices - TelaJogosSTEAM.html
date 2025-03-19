@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <title>PricesSteam</title>
 </head>
 <body>
@@ -35,12 +31,11 @@
         <div class="pesquisa">
             <div class="contentSteam">
                 <div class="input">
-                    <input type="text" placeholder="Enter the title">
+                    <input id="searchInput" type="text" placeholder="Enter the title">
                 </div>
                 <hr>
-                    <button>Show</button>
+                    <button id="searchButton">Show</button>
             </div>
-
         </div>
 
         <div class="table">
@@ -54,78 +49,11 @@
                         <th>METACRITIC</th>
                     </tr>
                 </thead>
-                
-                <tbody>
-                    <tr>
-                        <td>65%</td>
-                        <td><span class="price-old">$80.00</span> $40.00</td>
-                        <td class="jogo">
-                            <img src="./img/img-test.png" alt="">
-                            Lorem Ipsum is simply.
-                        </td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>30%</td>
-                        <td><span class="price-old">$100.00</span> $80.00</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>80%</td>
-                        <td><span class="price-old">$50.00</span> $15.00</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>45%</td>
-                        <td><span class="price-old">$120.00</span> $75.00</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>35%</td>
-                        <td><span class="price-old">$30.00</span> $24.00</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>20%</td>
-                        <td><span class="price-old">$10.00</span> $8.50</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>10%</td>
-                        <td><span class="price-old">$60.00</span> $55.00</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>90%</td>
-                        <td><span class="price-old">$120.00</span> $15.00</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>25%</td>
-                        <td><span class="price-old">$20.00</span> $14.00</td>
-                        <td>Lorem Ipsum is simply.</td>
-                        <td>10.0</td>
-                        <td>100</td>
-                    </tr>
+                <tbody id="gameList">
+                    <!-- Linhas serão adicionadas aqui -->
                 </tbody>
             </table>
         </div>
-
     </main>
 </body>
 </html>

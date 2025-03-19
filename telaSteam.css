@@ -13,6 +13,7 @@ header{
 }
 main{
     height: 100vh;
+    background-color: #1F232E;
 }
 
 .contentHeader{
@@ -72,12 +73,12 @@ header h1{
     margin-top: 5vh;
 }
 
-.contentSteam input{
+input{
     text-align: center;
     font-family: "Work Sans";
     font-size: 24px;
     font-weight: 300;
-    font-style: italic;
+    font-style: oblique;
     background-color: #394053;
     border: 1px solid;
     border-color: #ABABAB;
@@ -105,7 +106,7 @@ button{
     font-family: "Work Sans";
     font-size: 24px;
     font-weight: 400;
-    font-style: italic;
+    font-style: oblique;
     background-color: #394053;
     color: #FFFFFF;
     border: 1px solid;
@@ -142,13 +143,22 @@ td{
     border-bottom: 1px solid #444;
 }
 
-.jogo{
+.jogoIMG {
     display: flex;
     align-items: center;
 }
 
-.jogo img{
-    padding-right: 10px;
+.jogoIMG img {
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.jogoIMG p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 th{

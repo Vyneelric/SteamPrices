@@ -1,22 +1,47 @@
-"use strict"
+document.addEventListener("DOMContentLoaded", async () => {
+    async function fetchGames(storeID) {
+        try {
+            const response = await fetch(`https://www.cheapshark.com/api/1.0/deals?storeID=${storeID}`);
+            const data = await response.json();
+            return data.slice(0, 6);
+        } catch (error) {
+            console.error(`Erro ao buscar jogos da loja ${storeID}:`, error);
+            return [];
+        }
+    }
 
-        // Função para consumir a API CheapShark
-        fetch('https://www.cheapshark.com/api/1.0/deals?storeID=1')
-            .then(response => response.json())
-            .then(data => {
-                const jogos = data.slice(0, 6); // Pega os 6 primeiros jogos
+    async function loadGames(storeID, containerSelector, priceClass) {
+        const games = await fetchGames(storeID);
+        const container = document.querySelector(containerSelector);
 
-                // Preencher os dados dos jogos no HTML
-                const jogoElements = document.querySelectorAll('.textoIndividual');
+        // Limpa o conteúdo anterior
+        container.innerHTML = '';
 
-                jogos.forEach((jogo, index) => {
-                    const p = jogoElements[index].querySelector('p');
-                    const span = jogoElements[index].querySelector('span');
-                    const button = jogoElements[index].querySelector('button');
+        games.forEach((game) => {
+            const divGame = document.createElement('div');
+            divGame.classList.add('textoIndividual');
 
-                    p.textContent = jogo.title;
-                    span.textContent = '$' + jogo.normalPrice;
-                    button.textContent = '$' + jogo.salePrice;
-                });
-            })
-            .catch(error => console.error('Erro ao carregar dados da API:', error));
+            const title = document.createElement('p');
+            title.textContent = game.title;
+
+            const priceContainer = document.createElement('div');
+            priceContainer.classList.add(priceClass);
+
+            const normalPrice = document.createElement('span');
+            normalPrice.textContent = `$${game.normalPrice}`;
+
+            const salePrice = document.createElement('button');
+            salePrice.textContent = `$${game.salePrice}`;
+
+            // Monta a estrutura
+            priceContainer.appendChild(normalPrice);
+            priceContainer.appendChild(salePrice);
+            divGame.appendChild(title);
+            divGame.appendChild(priceContainer);
+            container.appendChild(divGame);
+        });
+    }
+
+    loadGames(1, '.steam .textosSteam', 'priceSteam');  // Adiciona os jogos da Steam
+    loadGames(25, '.epic .textosEpic', 'priceEpic');   // Adiciona os jogos da Epic Games
+});

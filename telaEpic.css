@@ -13,6 +13,7 @@ header{
 }
 main{
     height: 100vh;
+    background-color: #161616;
 }
 
 .contentHeader{
@@ -143,14 +144,24 @@ td{
     border-bottom: 1px solid #444;
 }
 
-.jogo{
+.jogoIMG {
     display: flex;
     align-items: center;
 }
 
-.jogo img{
-    padding-right: 10px;
+.jogoIMG img {
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
 }
+
+.jogoIMG p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 
 th{
     align-items: center;

@@ -105,11 +105,19 @@ main span{
     gap: 25px;
 }
 
-.textoIndividual{
+.textoIndividual {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 10px; /* Dá um espaço entre o texto e o botão */
+    flex-wrap: wrap; /* Permite que os elementos se ajustem caso o espaço seja pequeno */
+}
+
+.textoIndividual p {
+    max-width: 75%; /* Limita o tamanho do texto para evitar que ele empurre o botão */
+    word-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+    overflow-wrap: break-word; /* Alternativa para navegadores diferentes */
 }
 
 .priceSteam{
@@ -135,6 +143,8 @@ main span{
     border-radius: 5px; 
     border: none;
     text-align: center;
+    white-space: nowrap; /* Impede que o texto do botão quebre */
+    flex-shrink: 0; /* Garante que o botão não diminua de tamanho */
 }
 
 .priceEpic{
@@ -160,6 +170,8 @@ main span{
     border-radius: 5px; 
     border: none;
     text-align: center;
+    white-space: nowrap; /* Impede que o texto do botão quebre */
+    flex-shrink: 0; /* Garante que o botão não diminua de tamanho */
 }
 
 .textosSteam p{
@@ -238,6 +250,7 @@ hr{
     border-radius: 7px;
     cursor: pointer;
 }
+
 
 
 footer{

@@ -245,3 +245,73 @@ hr{
     border-radius: 7px;
     cursor: pointer;
 }
+
+
+@media (max-width:375px){
+
+    html{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    header p{
+        font-size: 36px;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main h1{
+        display: none;
+    }
+
+    main h2{
+        display: none;
+    }
+
+    .steam{
+        height: 16rem;
+        width: 18rem;
+        margin-top: 1rem;
+    }
+
+    .logoSteam{
+        height: 3rem;
+    }
+    .logoSteam img{
+        height: 40px;
+    }
+
+    hr{
+        margin-top: 0;
+        border: 1px solid;
+        border-color: #666666;
+    }
+
+    .botaoSteam{
+        font-size: 2px;
+    }
+
+    .botaoSteam button{
+        height: 2rem;
+        width: 10rem;
+        font-size: 12px;
+    }
+
+    .epic{
+        height: 16rem;
+        width: 16rem; 
+    }
+
+    .Lojas{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
+    }
+}
